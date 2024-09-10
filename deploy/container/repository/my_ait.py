@@ -89,11 +89,11 @@ if not is_ait_launch:
 
 
 if not is_ait_launch:
-    requirements_generator.add_package('torch','2.1.0')
-    requirements_generator.add_package('torchvision','0.16.0')
-    requirements_generator.add_package('numpy','1.22.0')
+    requirements_generator.add_package('torch','2.4.1')
+    requirements_generator.add_package('torchvision','0.19.1')
+    requirements_generator.add_package('numpy','1.26.3')
     requirements_generator.add_package('scikit-learn', '1.3.1')
-    requirements_generator.add_package('Pillow', '10.0.0')
+    requirements_generator.add_package('Pillow', '10.4.0')
     requirements_generator.add_package('pandas', '2.0.3')
 
 
@@ -159,7 +159,7 @@ if not is_ait_launch:
     manifest_genenerator.set_ait_name('eval_correctness_image_classifier_pytorch')
     manifest_genenerator.set_ait_description('【機械学習モデルの正確性】を評価するため、データセットをランダムに分割し、それぞれの分割されたデータセットを対象としモデルで精度算出すること。その精度差が低ければ、モデルはデータセットに対し汎用的な性能を獲得していると判断すること。')
     manifest_genenerator.set_ait_source_repository('https://github.com/aistairc/Qunomon_AIT_eval_correctness_image_classifier_pytorch')
-    manifest_genenerator.set_ait_version('1.0')
+    manifest_genenerator.set_ait_version('1.1')
     manifest_genenerator.add_ait_licenses('Apache License Version 2.0')
     manifest_genenerator.add_ait_keywords('pytorch')
     manifest_genenerator.add_ait_keywords('Image Classification')
@@ -410,7 +410,7 @@ def main() -> None:
 
 # [uneditable]
 
-# In[16]:
+# In[ ]:
 
 
 if __name__ == '__main__':
@@ -421,7 +421,7 @@ if __name__ == '__main__':
 
 # [required]
 
-# In[17]:
+# In[ ]:
 
 
 ait_owner='AIST'
@@ -432,7 +432,7 @@ ait_creation_year='2024'
 
 # [uneditable] 
 
-# In[18]:
+# In[ ]:
 
 
 if not is_ait_launch:
